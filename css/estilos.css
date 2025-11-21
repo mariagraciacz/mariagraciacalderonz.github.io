@@ -29,7 +29,7 @@ body{
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
-    color: #202b1a;
+    color: #f4f6f4;
 }
 .hero::before{
     content: "" ;
@@ -38,7 +38,7 @@ body{
     left:0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url('../images/foto.jpg');
+    background-color: #202b1a;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
