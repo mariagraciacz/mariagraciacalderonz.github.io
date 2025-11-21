@@ -29,7 +29,7 @@ body{
     position: relative;
     display: grid;
     grid-template-rows: 100px 1fr;
-    color: #fff;
+    color: #7fad68;
 }
 .hero::before{
     content: "" ;
@@ -72,7 +72,7 @@ body{
 }
 
 .nav__links{
-    color: #fff;
+    color: #7fad68;
     text-decoration: none;
 }
 
@@ -114,9 +114,9 @@ body{
 
 .cta{
     display: inline-block;
-    background-color: #00319cbd;
+    background-color: #9c0058;
     justify-self: center;
-    color:#fff;
+    color:#7fad68;
     text-decoration: none;
     padding: 13px 30px;
     border-radius: 32px;
