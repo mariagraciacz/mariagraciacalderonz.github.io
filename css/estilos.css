@@ -38,7 +38,7 @@ body{
     left:0;
     width: 100%;
     height: 100%;
-    background-color: #202b1a;
+    background-color: #f7e5e9;
     background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
     z-index: -1;
