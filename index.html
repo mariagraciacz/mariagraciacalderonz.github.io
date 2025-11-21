@@ -1,74 +1,184 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <meta charset="utf-8">
-    <title>Perfil de María Gracia</title>
-    <style>
-        /* Define el estilo para la imagen en el head */
-        .profile-img {
-            height: 50%; /* Es mejor usar CSS para esto */
-            width: 15%;
-            float: left; /* Para que el título esté al lado */
-            margin-right: 20px;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>María Gracia Calderón Zevallos</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <meta name="theme-color" content="#b53f7a">
+
+    <meta name="title" content="María Gracia Calderón Zevallos">
+    <meta name="description"
+        content="María Gracia Calderón Zevallos, Pagina de Presentacion.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mariagraciacz.github.io/mariagraciacalderonz.github.io/">
+    <meta property="og:title" content="María Gracia Calderón Zevallos">
+    <meta property="og:description" 
+        content="María Gracia Calderón Zevallos, Pagina de Presentacion.">
+    <meta property="og:image" content="https://rodrigovelasquezb.github.io/images/foto.jpg">
+
 </head>
 <body>
-    <img src="foto.jpg" alt="Foto de María Gracia" class="profile-img">
-    <h1>María Gracia Calderón Zevallos</h1>
-    
-    <h2>Sobre mí</h2>
-        <section id="sobre-mi">
-            <p>Hola, soy <strong>María Gracia Calderón Zevallos</strong>, estudiante de la <strong>Universidad Católica San Pablo (UCSP)</strong>, cursando el segundo semestre de la carrera de Ciencias de la Computación.</p>
+
+    <header class="hero" id="Inicio">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">María Gracia Calderón Zevallos</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#Inicio" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#Acerca de" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#Contacto" class="nav__links">Contacto</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Bienvenido/a</h1>
+            <p class="hero__paragraph">Soy estudiante de Ciencia de la Computación en la Universidad Católica San Pablo y este es mi trabajo final para el curso de Introducción a la Ciencia de la Computación</p>
+            <a href="https://cs.ucsp.edu.pe/pregrado/" class="cta">Dpto. Ciencia de la Computación</a>
+        </section>
+    </header>
+
+    <main>
+        <section class="container about" id="Acerca de">
+            <h2 class="subtitle"> Algunos de mis intereses </h2>
+            <p class="about__paragraph">En este apartado están algunos de mis gustos personales</p>
+
+            <div class="about__main">
+                <article class="about__icons">
+                    <img src="./images/movie-ticket-svgrepo-com.svg" class="about__icon">
+                    <h3 class="about__title">Películas</h3>
+                    <p class="about__paragraph">Me gustan todas las películas, mis favoritas son las comedias románticas y los thrillers.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/boxing-svgrepo-com.svg" class="about__icon">
+                    <h3 class="about__title">Deportes</h3>
+                    <p class="about__paragraph">Disfruto de hacer acrobacia en telas y escalar en mis tiempos libres.</p>
+                </article>
+
+                <article class="about__icons">
+                    <img src="./images/headphones.png" class="about__icon">
+                    <h3 class="about__title">Música</h3>
+                    <p class="about__paragraph">Me gusta mucho escuchar música y disfruto ir a conciertos.</p>
+                </article>
+            </div>
         </section>
 
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledge__texts">
+                    <h2 class="subtitle">Ramas de mi interés</h2>
+                    <p class="knowledge__paragraph">En el futuro me gustaría estar involucrada en Programación Gráfica como en desarrollo de videojuegos y trabajar en una empresa como:</p>
+                    <a href="https://www.nvidia.com/es-la/" class="cta">Nvidia</a>
+                </div>
 
-    <section id="cursos-recientes">
-        <h3>Cursos Recientes</h3>
-        <ul>
-            <li>Matematica II</li>
-            <li>Introduccion a la Filosofia</li>
-            <li>Estructuras discretas II</li>
-            <li>Apreciación Musical</li>
-            <li>Introduccion a las ciencias de la computacion</li>
-            <li>Ciencias de la computacion I</li>
+                <figure class="knowledge__picture">
+                    <img src="./images/nerd.png" class="knowledge__img">
+                </figure>
+            </div>
+        </section>
 
-        </ul>
-    </section>
-    
+        <section class="testimony">
+            <div class="testimony__container container">
+                <img src="images/leftarrow.svg" class="testimony__arrow" id="before">
 
-    <section id="Intereses-y-Hobbies">
-        <h2>Intereses y Hobbies</h2>
-        <ul>
-            <li>Escalar</li>
-            <li>Acrobacia en telas</li>
-            <li>Ir a conciertos</li>
-        </ul>
-    </section>
+                <section class="testimony__body testimony__body--show" data-id="1">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Ernesto Cuadros Vargas, <span class="testimony__course"> Docente </span></h2>
+                        <a href="https://pe.linkedin.com/in/ecuadrosv" class="cta">linkedin</a>
+                    </div>
 
-    <section id="companeros">
-        <h2>Compañeros</h2>
-        <ul>
-            <li><a href="https://aless014.github.io/LeonelAlessandroBolivarDomador/" target="_blank">Leonel Bolivar Domador</a></li>
-            <li><a href="https://hectorrodriguez17.github.io/mywebhr/" target="_blank">Hector Rodríguez</a></li>
-            <li><a href="https://traicypaccocolque.github.io/" target="_blank">Traicy Pacco Colque</a></li>
-            <li><a href="https://nancyhuanca2006-creator.github.io/Perfil-personal-de-Rocio/" target="_blank">Rocio Huanca Quispe</a></li>
-            <li><a href="https://svr-glitch.github.io/SANTIAGO-VELASCO-RIVERA/" target="_blank">Santiago Velasco Rivera</a></li>
-            <li><a href="https://angelabecerraamado-glitch.github.io/Angela-Becerra-Amado./" target="_blank">Angela Becerra Amado</a></li>
-            <li><a href="https://chaskacandia.github.io/chaskacandiaochoa.github.io/" target="_blank">Chaska Shiomara Deza Ccama</a></li>
-        </ul>
-    </section>
+                    <figure class="testimony__picture">
+                        <img src="./images/ErnestoCV.jpg" class="testimony__img">
+                    </figure>
+                </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>
-             <strong>Correo electrónico:</strong> 
-            <a href="maria.calderon.zevallos@ucsp.edu.pe">maria.calderon.zevallos@ucsp.edu.pe</a><br>
-             <strong>LinkedIn:</strong> 
-            <a href="https://www.linkedin.com/in/mar%C3%ADa-gracia-calder%C3%B3n-zevallos-14598b396/" target="_blank">Mi perfil</a> <br>
-             <strong>Universidad:</strong> <a href="https://ucsp.edu.pe/" target="_blank">Universidad Católica San Pablo (UCSP)</a><br>
-        </p>
-    </section>
+                <section class="testimony__body" data-id="2">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Luis Fernando Llosa, <span class="testimony__course"> Compañero </span></h2>
+                        <a href="#" class="cta">Página</a>
+                    </div>
+
+                    <figure class="testimony__picture">
+                        <img src="./images/foto.jpg" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="3">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Leonel Bolivar, <span class="testimony__course"> Compañero </span></h2>
+                        <a href="https://aless014.github.io/LeonelAlessandroBolivarDomador/" class="cta">Página</a>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/student-svgrepo-com.sv" class="testimony__img">
+                    </figure>
+                </section>
+
+                <section class="testimony__body" data-id="4">
+                    <div class="testimony__texts">
+                        <h2 class="subtitle">Hector Rodriguez, <span class="testimony__course"> Compañero </span></h2>
+                        <a href="https://hectorrodriguez17.github.io/mywebhr/" class="cta">Página</a>
+                    </div>
+                    <figure class="testimony__picture">
+                        <img src="./images/student-svgrepo-com.svg" class="testimony__img">
+                    </figure>
+                </section>
+                
+                <img src="images/rightarrow.svg" class="testimony__arrow" id="next">
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="Contacto">
+        <section class="footer__container container">
+            <nav class="nav nav--footer">
+                <h2 class="footer__title">¡Gracias!</h2>
+
+                <ul class="nav__link nav__link--footer">
+                    <li class="nav__items">
+                        <a href="#Inicio" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#Acerca de" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#Contacto" class="nav__links">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/mar%C3%ADa-gracia-calder%C3%B3n-zevallos-14598b396/" target="_blank" class="footer__icons"><img src="./images/linkedin.svg" class="footer__img"></a>
+                <a href="maria.calderon.zevallos@ucsp.edu.pe" class="footer__icons"><img src="./images/gmail.svg" class="footer__img"></a>
+            </div>
+
+            <h3 class="footer__copyright">Mis Redes</h3>
+        </section>
+    </footer>
+
+    <script src="./js/slider.js"></script>
+    <script src="./js/menu.js"></script>
 
 </body>
 </html>
